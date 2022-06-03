@@ -1,0 +1,61 @@
+/* h4{
+    color: blue;
+} */
+
+textarea{
+    resize: none;
+}
+
+.espacios{
+    margin: 1rem;
+}
+
+h1{
+    color: red;
+}
+
+#titulo{
+    color: blue;
+}
+
+.titulo{
+    color: green;
+}
+
+/* 
+   1. ID
+   2. CLASE
+   3. ETIQUETA 
+*/
+
+input[type="text"]{
+    border: 5px solid red;
+}
+
+/* Selector para hermanos adyacentes */
+/* h4 + p{
+    color: red;
+} */
+
+/* Selector para hermanos */
+/* h4 ~ p{
+    color: red;
+} */
+
+/* Selector para hijos */
+/* div#miid > p{
+    color: red;
+} */
+
+/* Selector para descendientes  */
+/* div p{
+    color: red;
+} */
+
+#miid{
+    background-color: antiquewhite;
+}
+
+#miid:hover{
+    background-color: blue;
+}

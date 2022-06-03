@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    text-align: center;
+}
+
+header{
+    margin-top: 5rem;
+}
+
+header>h1{
+    font-weight: lighter;
+}
+
+header>form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header>form>input{
+    border: 0;
+    background-color: transparent;
+    text-align: center;
+    width: 50vw;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+header>form>input::placeholder{
+    font-style: italic;
+}
+
+header>form>button{
+    background-color: black;
+    color: white;
+    border: 0;
+    width: 10rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+section>article{
+    width: 20rem;
+    margin: 1rem;
+}
+
+section>article>h3{
+    margin: 0;
+    margin-top: .3rem;
+}
+
+section>article>p{
+    margin: 0;
+    margin-top: .3rem;
+    color: gray;
+    font-size: .8rem;
+}
+
+section>article>img{
+    width: 3rem;
+}
+
+@media (min-width: 820px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section{
+        flex-direction: row;
+        max-width: 80vw;
+        margin-top: 4rem;
+    }
+}

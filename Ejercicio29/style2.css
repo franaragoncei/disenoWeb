@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+}
+
+div#cabecera {
+    width: 100vw;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>div>img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+header>div>div>img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* invertimos el color y le damos un padding left */
+header>div>img:first-of-type {
+    filter: invert();
+    padding-left: 1rem;
+}
+
+nav {
+    display: none;
+}
+
+nav>a {
+    color: white;
+    text-decoration: none;
+    margin: .5rem;
+}
+
+div#iconos{
+    display: flex;
+}
+
+header>div>div>:nth-of-type(1) {
+    display: none;
+    margin-right: .5rem;
+}
+
+header>div>div>img:last-of-type {
+    padding-right: 1rem;
+    cursor: default;
+}
+
+section>img {
+    width: 100vw;
+}
+
+@media (min-width: 820px) {
+
+    /* Ocultamos el menú de hamburguesa */
+    header>div>img:first-of-type {
+        display: none;
+    }
+
+    /* Mostramos las opciones del menú */
+    nav {
+        display: flex;
+    }
+
+    header>div>:nth-of-type(2) {
+        padding-left: 1rem;
+    }
+
+    header>div>div>:nth-of-type(1) {
+        display: flex;
+    }
+
+    /* Cambiamos la imagen optimizada para tablet */
+    section>img {
+        content: url('images/Tablet_Version.png');
+    }
+}
+
+@media (min-width: 1024px){
+
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    div#cabecera{
+        max-width: 55rem;
+    }
+
+    section>img{
+        content: url('images/Desktop_Version.png');
+    }
+}

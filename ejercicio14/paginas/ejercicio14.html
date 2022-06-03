@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EJERCICIO 14</title>
+    <link rel="stylesheet" href="../estilos/ejercicio14.css">
+</head>
+<body>
+    <h4>Pedido de pizza</h4>
+    <form action="#">
+        <fieldset>
+            <legend>La pizza</legend>
+            <div>
+                <p>Ingredientes</p>
+                <div>
+                    <input type="checkbox" id="queso"> <label for="queso">Queso</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="pimiento"> <label for="pimiento">Pimiento</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cebolla"> <label for="cebolla">Cebolla</label>
+                </div>
+                <p>Tamaño</p>
+                <div>
+                    <input type="radio" name="size" id="pequenia"><label for="pequenia">Pequeña</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="mediana"><label for="mediana">Mediana</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="grande"><label for="grande">Grande</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de entrega</legend>
+            <div class="espacios">
+                <label for="nombre">Nombre</label>
+                <input required id="nombre" type="text">
+            </div>
+            <div class="espacios">
+                <label for="direccion">Dirección</label>
+                <input required id="direccion" type="text">
+            </div>
+            <div class="espacios">
+                <label for="telefono">Telefono</label>
+                <input required id="telefono" type="text">
+            </div>
+            <div class="espacios">
+                <label for="instrucciones">Instrucciones Especiales</label>
+                <textarea id="instrucciones" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Método de Pago</legend>
+            <div>
+                <select>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="paypal">Paypal</option>
+                </select>
+            </div>
+        </fieldset>
+        <input type="submit" value="Ok">
+        <button>Ok</button>
+    </form>
+</body>
+</html>

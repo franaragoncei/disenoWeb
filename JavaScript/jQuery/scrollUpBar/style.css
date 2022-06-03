@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+header{
+    background-color: antiquewhite;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    background-color: lightcoral;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 97vw;
+    z-index: 1;
+}
+
+section{
+    padding-top: 3rem;
+}

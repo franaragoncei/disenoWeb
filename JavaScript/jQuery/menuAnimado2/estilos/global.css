@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+header {
+    width: 100vw;
+    height: 3rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+div#menuHamburguesa {
+    /* border: 1px solid red; */
+    width: 2.2rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+span {
+    background-color: white;
+    width: 2.2rem;
+    height: .1rem;
+    display: block;
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+ul {
+    display: none;
+    padding: 0;
+    list-style: none;
+    background-color: white;
+    width: 15rem;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+}
+
+li {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    height: 3rem;
+    text-align: center;
+}
+
+li:hover {
+    background-color: black;
+    transition: all .4s;
+}
+
+p:hover>a {
+    color: white;
+    transition: all .4s;
+}
+
+p {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.primera {
+    transition: all .4s;
+    transform: translateY(.5rem) rotate(45deg);
+}
+
+.segunda {
+    opacity: 0;
+}
+
+.tercera {
+    transition: all .4s;
+    transform: translateY(-.5rem) rotate(-45deg);
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++ 
+ ++++++++++++++++++++++++++++++++++++++++++++++
+  ++++++++++++++++++++++++++++++++++++++++++++++
+   +++++++++++++++++HOME+++++++++++++++++
+    ++++++++++++++++++++++++++++++++++++++++++++++
+     ++++++++++++++++++++++++++++++++++++++++++++++
+      ++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+h1 {
+    text-align: center;
+}

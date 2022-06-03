@@ -1,0 +1,23 @@
+.caja{
+    width: 5rem;
+    height: 5rem;
+    background-color: blue;
+    color: white;
+    display: inline-block;
+}
+
+#dos{
+    background-color: red;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    z-index: 1;
+}
+
+#tres{
+    background-color: yellow;
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    z-index: 2;
+}

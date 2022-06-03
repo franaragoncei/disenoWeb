@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EJERCICIO 13</title>
+    <style>
+        div{
+            margin-bottom: 1rem;
+        }
+
+        button{
+            padding: 2rem;
+            font-size: xx-large;
+            background-color: bisque;
+            border: 5px solid red;
+            color: blue;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="#">
+        <div>
+            <label for="nombre">Nombre: </label>
+            <input required type="text">
+        </div>
+        <div>
+            <label for="apellido">Apellidos: </label>
+            <input type="text">
+        </div>
+        <div>
+            <span>Sexo: </span>
+            <input name="sexo" id="hombre" type="radio">
+            <label for="hombre">Hombre</label>
+            <input name="sexo" id="mujer" type="radio">
+            <label for="mujer">Mujer</label>
+        </div>
+        <div>
+            <label for="email">Correo: </label>
+            <input required type="email">
+        </div>
+        <div>
+            <div>
+                <input checked id="novedades" type="checkbox">
+                <label for="novedades">Deseo recibir información sobre novedades y ofertas</label>
+            </div>
+            <div>
+                <input required id="privacidad" type="checkbox">
+                <label for="privacidad">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+            </div>
+        </div>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+h1{
+    color: red;
+    background-color: yellow;
+}
+
+h2{
+    font-family: monospace;
+}
+
+#verde{
+    color: green;
+}
+
+.azul{
+    color: blue;
+}
+
+p{
+    color: pink;
+}

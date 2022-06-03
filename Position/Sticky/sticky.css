@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+dl > div {
+    background-color: beige;
+    padding: 1rem;
+}
+
+dt{
+    background-color: burlywood;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin: 0;
+    padding: .5rem;
+    position: sticky;
+    top: 0;
+}
+
+dd{
+    margin: 0;
+    padding: .3rem;
+}

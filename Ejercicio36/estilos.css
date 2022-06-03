@@ -1,0 +1,118 @@
+@font-face {
+    font-family: FANTASY_LAND;
+    src: url('Fantasy_Land.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+header>h3 {
+    font-family: FANTASY_LAND;
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+header>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    letter-spacing: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header>a {
+    color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+section>article {
+    /* border: 1px solid red; */
+    margin: .5rem;
+    width: 25rem;
+    /* padding: 2rem; */
+}
+
+section>article>div.imagen {
+    /* border: 1px solid green; */
+    height: 30rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+section>article>div.texto {
+    padding-left: 1rem;
+    /* border: 1px solid blue; */
+}
+
+section>article>div.texto>p:nth-child(2) {
+    font-weight: bold;
+}
+
+@media (min-width: 820px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        /* border: 1px solid blue; */
+        position: absolute;
+        margin-top: 10rem;
+        text-align: left;
+        width: 15rem;
+    }
+
+    section {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    section>article:first-of-type {
+        width: 15rem;
+        height: 20rem;
+        margin-right: 6rem;
+    }
+
+    section>article:first-of-type>div.imagen {
+        height: 100%;
+        width: 100%;
+    }
+
+    section>article>div.texto>p {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    section>article:first-of-type>div.texto {
+        position: absolute;
+        margin-top: -6rem;
+        background-color: white;
+        width: 14rem;
+    }
+
+    section>article:last-of-type>div.texto {
+        position: absolute;
+        margin-top: -3.5rem;
+        background-color: white;
+        width: 14rem;
+    }
+
+}

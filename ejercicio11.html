@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 11</title>
+    <style>
+        div{
+            margin-bottom: 1rem;
+        }
+
+        textarea{
+            resize: none;
+            border: 3px dashed black;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>FORMULARIO 1</legend>
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input required type="text" id="nombre" placeholder="Introduce tu nombre">
+            </div>
+            <div>
+                <label for="email">Correo electrónico: </label>
+                <input type="email" id="email" placeholder="Introduce tu email">
+            </div>
+            <div>
+                <label for="url">URL: </label>
+                <input type="url" id="url" placeholder="Introduce la url">
+            </div>
+            <div>
+                <label for="date">Fecha: </label>
+                <input type="date" id="date">
+            </div>
+            <div>
+                <label for="time">Tiempo: </label>
+                <input type="time" id="time">
+            </div>
+            <div>
+                <label for="datetime">Fecha y Hora: </label>
+                <input type="datetime-local" id="datetime">
+            </div>
+            <div>
+                <label for="month">Mes: </label>
+                <input type="month" id="month">
+            </div>
+            <div>
+                <label for="week">Semana: </label>
+                <input type="week" id="week">
+            </div>
+            <div>
+                <label for="number">Número (min -10, max 10): </label>
+                <input min="-10" max="10" type="number" id="number">
+            </div>
+            <div>
+                <label for="tel">Teléfono: </label>
+                <input type="tel" id="tel" placeholder="Introduce tu teléfono">
+            </div>
+            <div>
+                <label for="search">Término de Busqueda: </label>
+                <input type="search" id="search" placeholder="Introduce algo para buscar">
+            </div>
+            <div>
+                <label for="color">Color favorito: </label>
+                <input type="color" id="color">
+            </div>
+            <div>
+                <label for="comentario">Introduce tu comentario: </label>
+                <textarea placeholder="Comentario aqui" name="comentario" id="comentario" cols="40" rows="20"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="button" value="Enviar2">
+                <button>Enviar3</button>
+                <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

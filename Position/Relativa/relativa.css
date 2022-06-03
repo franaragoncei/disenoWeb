@@ -1,0 +1,14 @@
+.caja{
+    width: 5rem;
+    height: 5rem;
+    background-color: blue;
+    color: white;
+    display: inline-block;
+}
+
+#dos{
+    background-color: red;
+    position: relative;
+    top: 3rem;
+    left: 1rem;
+}

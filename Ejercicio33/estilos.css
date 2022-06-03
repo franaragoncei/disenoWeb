@@ -1,0 +1,95 @@
+@font-face {
+    font-family: ShadowsIntoLight_Regular;
+    src: url('font/ShadowsIntoLight-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section>div#primera {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 25rem;
+}
+
+section>div#primera>div {
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 1rem;
+}
+
+h1,
+h3 {
+    font-family: ShadowsIntoLight_Regular;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+section>div#segunda {
+    /* border: 1px solid blue; */
+}
+
+section>div#segunda>div.contenedor2 {
+    display: flex;
+    align-items: center;
+}
+
+section>div#segunda>div.contenedor2>div.textos {
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 6rem;
+}
+
+@media (min-width: 820px) {
+    section {
+        flex-direction: row;
+    }
+
+    section>div#primera {
+        /* border: 1px solid red; */
+        height: 100vh;
+    }
+
+    section>div#segunda {
+        /* border: 1px solid blue; */
+        height: 100vh;
+    }
+
+    section>div#segunda>div.contenedor2{
+        /* border: 3px solid greenyellow; */
+        height: 50vh;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}

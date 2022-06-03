@@ -1,0 +1,25 @@
+section{
+    background-color: lightblue;
+    display: grid;
+    grid-template-rows: [y0] 50px [y1] 100px [y2] 50px [y3];
+    grid-template-columns: [x0] 50px [x1] 100px [x2] 50px [x3];
+}
+
+article{
+    background-color: lightcoral;
+    border: 1px solid yellow;
+}
+
+.header{
+    grid-column-start: x0;
+    grid-column-end: x3;
+
+    grid-column: x0 / x3;
+}
+
+.sidebar{
+    grid-row-start: y1;
+    grid-row-end: y3;
+
+    grid-row: y1 / y3;
+}

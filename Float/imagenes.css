@@ -1,0 +1,13 @@
+img{
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;
+    transform: rotate(180deg);
+}
+
+div{
+    border: 1px solid red;
+    width: 20rem;
+    height: 30rem;
+    float: right;
+}

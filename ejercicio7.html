@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EJERCICIO 7</title>
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 0.3rem;
+        }
+
+        .azul{
+            background-color: aqua;
+        }
+
+        #textoAzul{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>EJERCICIO 7</caption>
+        <tr>
+            <th colspan="2">CABECERA 1</th>
+            <th>CABECERA 2</th>
+            <th>CABECERA 3</th>
+        </tr>
+        <tr>
+            <td colspan="2">A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td class="azul" rowspan="3">D</td>
+            <td colspan="2">E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td class="azul" colspan="2">H</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            <td id="textoAzul">K</td>
+        </tr>
+    </table>
+</body>
+
+</html>

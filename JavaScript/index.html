@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        #miBoton{
+            background-color: aquamarine;
+            border: 1px solid black;
+            padding: 2rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>JAVASCRIPT</h1>
+    <button id="miBoton">Clicame</button>
+    <!-- <script src="ejemplos.js"></script> -->
+    <script>
+        var saludo = 'Hola'
+        var despedida = 'Adios'
+        var saludoYDespedida = saludo + ' y ' + despedida
+        let numeroPrimero = 21
+        var numeroSegundo = '2' 
+        var miBoton = document.getElementById('miBoton')
+
+        console.log(miBoton);
+
+        function nombreFuncion(){
+            alert('Me has clicado')
+        }
+
+        miBoton.addEventListener('click', nombreFuncion)
+
+        miBoton.addEventListener('click', function(){
+            
+        })
+
+        // cuanto es el resultado de 2 + '22'
+
+        // El resultado es: 222
+
+        // cuanto es el resultado de '10' / 2
+
+        // El resultado es 5
+
+        // comentario de una linea
+
+        /*
+        COMENTARIO 
+        DE
+        VARIAS 
+        LINEAS
+        */
+
+        console.log(saludo)
+
+        saludo = 'Adios'
+
+        console.log(saludo);
+
+
+        console.log(numeroPrimero * numeroSegundo);
+
+        var opcion1 = 1
+        var opcion2 = '1'
+
+        if(opcion1 === opcion2){
+            console.log('Son iguales');
+        }else{
+            console.log('No son iguales');
+        }
+    </script>
+</body>
+</html>

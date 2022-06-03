@@ -1,0 +1,27 @@
+section{
+    border: 1px solid red;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap; */
+    align-items:  center;
+    justify-content: center;
+    height: 90vh;
+}
+
+article{
+    background-color: blue;
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem;
+    color: white;
+}
+
+article#uno{
+    flex-basis: 10rem;
+}
+
+/* article{
+    background-color: red;
+    margin: 1rem;
+    color: white;
+} */

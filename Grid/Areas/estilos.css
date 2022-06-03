@@ -1,0 +1,28 @@
+section{
+    display: grid;
+    grid-template-areas: 'cabecera cabecera cabecera'    
+                         'lateral cuerpo .'
+                         'none pie pie'
+    ;
+    height: 98vh;
+}
+
+header{
+    grid-area: cabecera;
+}
+
+main{
+    grid-area: cuerpo;
+}
+
+aside{
+    grid-area: lateral;
+}
+
+footer{
+    grid-area: pie;
+}
+
+header, main, aside, footer{
+    border: 1px solid red;
+}

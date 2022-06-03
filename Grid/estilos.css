@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: grid;
+    grid-template-rows: repeat(3, 4fr 1fr);
+    grid-template-columns: repeat(2, 2fr);
+}
+
+article{
+    background-color: yellow;
+    border: 3px solid red;
+}

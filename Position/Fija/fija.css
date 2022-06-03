@@ -1,0 +1,19 @@
+.caja{
+    width: 5rem;
+    height: 5rem;
+    background-color: blue;
+    color: white;
+}
+
+#uno{
+    position: fixed;
+    top: 80px;
+    left: 10px;
+}
+
+/* .contenido{
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid red;
+    overflow: scroll;
+} */

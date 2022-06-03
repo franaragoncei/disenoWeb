@@ -1,0 +1,151 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    border: 3px solid black;
+    background-color: lightgray;
+    border-radius: 12px;
+}
+
+header>img {
+    width: 5rem;
+    height: 4.35rem;
+}
+
+header>h1 {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    color: navy;
+    font-weight: lighter;
+}
+
+header>h1>span {
+    color: rgb(21, 204, 21);
+    font-weight: bold;
+}
+
+nav {
+    background-color: navy;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+section#principal {
+    border: 3px solid black;
+    border-radius: 12px;
+    text-align: center;
+}
+
+section#principal>h2 {
+    font-family: 'Bree Serif', serif;
+    color: deepskyblue;
+}
+
+section#principal>article#primerElemento{
+    border: 3px solid grey;
+    border-radius: 12px;
+}
+
+section#principal>article#primerElemento>h3>a{
+    font-family: 'Bree Serif', serif;
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+section#principal>article#primerElemento>h3>a:hover{
+    color: orange;
+}
+
+section#principal>article#primerElemento>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#principal>article#primerElemento>div>img{
+    width: 15rem;
+    height: 15rem;
+}
+
+section#principal>article#primerElemento>div>p{
+    text-align: left;
+    font-size: small;
+    padding: 1rem;
+}
+
+/* LAS DOS ÚLTIMAS TARJETAS */
+
+section#principal>div>article{
+    border: 3px solid grey;
+    border-radius: 12px;
+}
+
+section#principal>div>article>h3>a{
+    font-family: 'Bree Serif', serif;
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+section#principal>div>article>h3>a:hover{
+    color: orange;
+}
+
+section#principal>div>article>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#principal>div>article>div>img{
+    width: 15rem;
+    height: 15rem;
+}
+
+section#principal>div>article>div>p{
+    text-align: left;
+    font-size: small;
+    padding: 1rem;
+}
+
+section#principal>article#primerElemento:hover{
+    border: 3px dotted orange;
+}
+
+section#principal>div>article:hover{
+    border: 3px dotted orange;
+}
+
+/* FOOTER */
+footer{
+    border: 3px solid black;
+    border-radius: 12px;
+    background-color: lightgray;
+    padding: .8rem;
+}
+
+@media (min-width: 820px){
+    section#principal>article#primerElemento>div{
+        flex-direction: row;
+    }
+
+    section#principal>div>article>div{
+        flex-direction: row;
+    }
+
+    section#principal>article>h3{
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    section#principal>div>article>h3{
+        text-align: left;
+        margin-left: 1rem;
+    }
+}

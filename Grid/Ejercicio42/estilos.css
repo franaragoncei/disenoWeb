@@ -1,0 +1,35 @@
+section{
+    height: 97vh;
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+    grid-template-rows: [lineaHorizontal1] 1fr [lineaHorizontal2] 1fr [lineaHorizontal3] 1fr [lineaHorizontal4];
+}
+
+article{
+    background-color: lightblue;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+#imagen1{
+    grid-row: lineaHorizontal1 / lineaHorizontal3;
+}
+
+#imagen3{
+    grid-column: x2 / x4;
+}
+
+#imagen4{
+    grid-row: lineaHorizontal2 / lineaHorizontal4;
+}
+
+#imagen8{
+    grid-column: x2 / x4;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}

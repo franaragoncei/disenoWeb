@@ -1,0 +1,48 @@
+/* ul>li:first-child{
+    color: blue;
+    font-size: .5rem;
+}
+
+ul>li:nth-child(2){
+    font-size: 1rem;
+}
+
+ul>li:nth-child(3){
+    font-size: 1.5rem;
+}
+
+ul>li:nth-child(4){
+    font-size: 2rem;
+}
+
+ul>li:last-child{
+    font-size: 2.5rem;
+    color: blue;
+} */
+
+ul>li:nth-child(even) {
+    color: blue;
+}
+
+/* ODD es para los impares
+   EVEN es para los pares */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div:nth-child(even) {
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+}
+
+div:nth-child(odd) {
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+}
+
+.amarillo{
+    background-color: yellow;
+}

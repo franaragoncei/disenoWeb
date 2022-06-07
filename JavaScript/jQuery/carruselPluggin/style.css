@@ -2,12 +2,17 @@ body {
     background-color: bisque;
 }
 
+img{
+    width: 600px;
+    height: 400px;
+}
+
 #wrapper {
     text-align: center;
 }
 
 /* Estilos al contenedor del todos los elementos del carrusel */
-#jcarousel-wrapper {
+#jcarousel_wrapper {
     margin: 20px auto;
     position: relative;
     border: 5px solid #fff;
@@ -38,16 +43,16 @@ body {
 }
 
 /* Estilos para los controles */
-.jcarousel-control-prev {
+.jcarousel_control_prev {
     left: -50px;
 }
 
-.jcarousel-control-next {
+.jcarousel_control_next {
     right: -50px;
 }
 
-.jcarousel-control-prev,
-.jcarousel-control-next {
+.jcarousel_control_prev,
+.jcarousel_control_next {
     position: absolute;
     font-size: 25px;
     top: 200px;
@@ -62,21 +67,21 @@ body {
 }
 
 /* Estilos para activar y desactivar los botones */
-.jcarousel-control-prev.inactive,
-.jcarousel-control-next.inactive {
+.jcarousel_control_prev.inactive,
+.jcarousel_control_next.inactive {
     opacity: .5;
     cursor: default;
 }
 
 /* Estilos para el contenedor de la paginacion */
-.jcarousel-pagination {
+.jcarousel_pagination {
     position: absolute;
     bottom: 0;
     left: 15px;
 }
 
 /* Estilos para cada elemento incluido en la paginacion */
-.jcarousel-pagination a {
+.jcarousel_pagination a {
     text-decoration: none;
     background: #fff;
     color: #4E443C;
@@ -87,7 +92,7 @@ body {
 }
 
 /* Estilo para cuando esté activo un elemento de la paginacion */
-.jcarousel-pagination a.active {
+.jcarousel_pagination a.active {
     background: #4E443C;
     color: #fff;
     opacity: 1;

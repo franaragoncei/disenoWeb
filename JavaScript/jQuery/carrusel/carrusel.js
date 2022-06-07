@@ -56,27 +56,36 @@ $(function () {
             sliderInit()
 
             // AÑADIMOS LA FUNCIONALIDAD PARA QUE AL HACER CLICK EN LOS BOTONES SE CAMBIE LA DIAPOSITIVA
-            $('#control_buttons>li').click(function(){
-                if(currentSlider != $(this).index()){
+            $('#control_buttons>li').click(function () {
+                if (currentSlider != $(this).index()) {
                     cambiarFoto($(this).index())
                 }
+            })
+            // AÑADE FUNCIONALIDAD PARA QUE AL CLICAR EN BOTON DE RETROCEDER, PASE A LA DIAPOSITIVA ANTERIOR
+            $('#anterior').click(function () {
+                cambiarFoto(currentSlider - 1)
+            })
+
+             // AÑADE FUNCIONALIDAD PARA QUE AL CLICAR EN BOTON DE AVANZAR, PASE A LA DIAPOSITIVA SIGUIENTE
+            $('#siguiente').click(function () {
+                cambiarFoto(currentSlider + 1)
             })
         }
 
         var cambiarFoto = function (numeroFoto) {
-            // LIMPIAMOS EL INTERVALO
-            clearInterval(sliderInterval)
+            // LIMPIAMOS EL INTERVALO PARA QUE SE PARE LA REPRODUCCIÓN AUTOMATICA
+            // clearInterval(sliderInterval)
 
             // CREAMOS LAS VARIABLES
             var fotos = carruselContenedor.fotos.arrayFotos
             var botones = $('#control_buttons>li')
 
             // CONTROLAMOS EL BOTÓN PULSADO PARA VER CUAL ES EL SIGUIENTE
-            // if (numeroFoto >= lengthSlider) {
-            //     numeroFoto = 0
-            // } else if (numeroFoto < 0){
-            //     numeroFoto = lengthSlider - 1
-            // }
+            if (numeroFoto >= lengthSlider) {
+                numeroFoto = 0
+            } else if (numeroFoto < 0) {
+                numeroFoto = lengthSlider - 1
+            }
 
             // ELIMINAMOS LA CLASE ACTIVE A TODOS LOS BOTONESS
             botones.removeClass('active')

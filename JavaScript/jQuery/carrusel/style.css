@@ -35,7 +35,10 @@ h1{
 }
 
 .slider_wrapper>.current_slide{
-    display: block;
+    display: flex;
+    align-items: center;
+    height: 15rem;
+    width: 25rem;
 }
 
 img{
@@ -46,6 +49,16 @@ img{
     height: auto;
 }
 
+#contenedor{
+    position: fixed;
+    z-index: 1;
+}
+
+a{
+    color: white;
+    padding: .5rem;
+    background-color: blue;
+}
 
 /* BOTONES DE CONTROL PARA NAVEGACIÓN */
 .control_buttons{
@@ -67,4 +80,16 @@ img{
 
 .control_buttons>li.active{
     background-color: #60d4ee;
+}
+
+button{
+    cursor: pointer;
+}
+
+#contenedorBotones{
+    position: absolute;
+    margin-top: 10rem;
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Slider con jQuery</h1>
+    </header>
+    <!-- CONTENEDOR DEL CARRUSEL -->
+    <section id="slider" class="contenedor-slider">
+        <ul class="slider_wrapper">
+            <!-- CADA UNA DE LAS IMÁGENES -->
+            <li class="current_slide">
+                <img src="https://c2.staticflickr.com/6/5094/5531620171_82185d6285_z.jpg
+                " alt="slide 1">
+            </li>
+            <li>
+                <img src="https://c2.staticflickr.com/2/1142/5112412572_6b07684fd6_z.jpg
+                " alt="slide 2">
+            </li>
+            <li>
+                <img src="https://c2.staticflickr.com/4/3534/4569643612_929f475102_z.jpg
+                " alt="slide 3">
+            </li>
+            <li>
+                <img src="https://c1.staticflickr.com/9/8360/8276578922_f65a266891_z.jpg
+                " alt="slide 4">
+            </li>
+        </ul>
+        <!-- CONTROLES DE NAVEGACIÓN -->
+        <ul id="control_buttons" class="control_buttons">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    <script src="carrusel.js"></script>
+</body>
+
+</html>

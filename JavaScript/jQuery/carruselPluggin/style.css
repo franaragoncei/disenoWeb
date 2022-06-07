@@ -1,0 +1,95 @@
+body {
+    background-color: bisque;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+/* Estilos al contenedor del todos los elementos del carrusel */
+#jcarousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+    border: 5px solid #fff;
+    width: 600px;
+    height: 400px;
+}
+
+/* Area visible del carrusel. */
+#jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenedor de los items del carrusel */
+#jcarousel ul {
+    /* Le añadimos un ancho suficientemente grande como para contener todos los elementos */
+    width: 1000rem;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Los elementos del carrusel. */
+#jcarousel li {
+    /* solamente necesitamos esta propiedad si son elementos de bloques como los <li> */
+    float: left;
+}
+
+/* Estilos para los controles */
+.jcarousel-control-prev {
+    left: -50px;
+}
+
+.jcarousel-control-next {
+    right: -50px;
+}
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    font-size: 25px;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 25px;
+}
+
+/* Estilos para activar y desactivar los botones */
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+/* Estilos para el contenedor de la paginacion */
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+/* Estilos para cada elemento incluido en la paginacion */
+.jcarousel-pagination a {
+    text-decoration: none;
+    background: #fff;
+    color: #4E443C;
+    padding: 3px;
+    text-align: center;
+    margin-right: 2px;
+    opacity: .75;
+}
+
+/* Estilo para cuando esté activo un elemento de la paginacion */
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}

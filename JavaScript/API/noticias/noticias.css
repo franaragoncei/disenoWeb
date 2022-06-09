@@ -1,0 +1,33 @@
+/** Thank You Rafael, por la ayuda, el consejo y limpieza del codigo**/
+
+.newshome {
+    max-width: 430px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newshome>div {
+    width: 49%;
+}
+
+.newshome>div:first-child {
+    width: 100%;
+}
+
+.newshome>div>a>img {
+    width: 100%;
+    border-top: 5px solid #F2A814;
+    float: left;
+}
+
+.newshome>div>a>p {
+    padding: 2px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: Verdana;
+    background-color: #0B2161;
+}

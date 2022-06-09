@@ -1,8 +1,10 @@
 var boton = document.getElementById('crearCarrusel')
 var contenedor = document.getElementById('contenedor')
+var input = document.getElementById('numero')
 
 boton.addEventListener('click', function () {
-    fetch('https://dog.ceo/api/breeds/image/random/10')
+    contenedor.innerHTML = ''
+    fetch('https://dog.ceo/api/breeds/image/random/' + input.value)
         .then(respuesta => respuesta.json())
         .then(datos => {
             console.log(datos);

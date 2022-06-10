@@ -20,14 +20,15 @@
             align-items: center;
         }
 
-        input, select {
+        input,
+        select {
             margin: .5rem;
             padding: .5rem;
             border-radius: 6px;
             border: 1px solid lightgray;
         }
 
-        input:focus{
+        input:focus {
             outline: none;
         }
     </style>
@@ -37,23 +38,15 @@
     <h1>CAMBIO DE DIVISA</h1>
     <div id="contenedor">
         <div>
-            <input type="text" id="moneda1"  placeholder="euro">
-            <select id="valor">
-                <option selected value="EUR">euro</option>
-                <option value="USD">dólar estadounidense</option>
-                <option value="GBP">libra esterlina</option>
-            </select>
+            <input type="text" id="moneda1" placeholder="valor 1">
+            <select id="valor"></select>
         </div>
         <div>
-            <input type="text" id="moneda2" placeholder="dólar">
-            <select id="valor">
-                <option value="EUR">euro</option>
-                <option selected value="USD">dólar estadounidense</option>
-                <option value="GBP">libra esterlina</option>
-            </select>
+            <input type="text" id="moneda2" placeholder="valor 2">
+            <select id="valor2"></select>
         </div>
     </div>
-    <script src="divisa.js"></script>
+    <script src="divisa2.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMBIO DIVISA</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div#contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input, select {
+            margin: .5rem;
+            padding: .5rem;
+            border-radius: 6px;
+            border: 1px solid lightgray;
+        }
+
+        input:focus{
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CAMBIO DE DIVISA</h1>
+    <div id="contenedor">
+        <div>
+            <input type="text" id="euro" value="1" placeholder="euro">
+            <select id="valor">
+                <option selected value="EUR">euro</option>
+                <option value="USD">dólar estadounidense</option>
+                <option value="GBP">libra esterlina</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" id="dolar" placeholder="dólar">
+            <select id="valor">
+                <option value="EUR">euro</option>
+                <option selected value="USD">dólar estadounidense</option>
+                <option value="GBP">libra esterlina</option>
+            </select>
+        </div>
+
+    </div>
+</body>
+
+</html>

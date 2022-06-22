@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIEDRA, PAPEL Y TIJERA | JUEGO DE MODA</title>
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <meta name="author" content="CEI DISEÑO WEB" />
+    <meta name="description" content="JUEGO DE MODA DEL MOMENTO. PIEDRA, PAPEL O TIJERA" />
+    <meta name="googlebot-news" content="index" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            margin: .5rem;
+            cursor: pointer;
+        }
+
+        button#jugar {
+            width: 90vw;
+            height: 2rem;
+            border: 0;
+            color: white;
+            background: linear-gradient(90deg, rgb(196, 0, 173), rgb(0, 153, 241));
+        }
+
+        div#botones>button {
+            border: 0;
+            color: white;
+            padding: .5rem;
+        }
+
+        div#botones>button:nth-child(1) {
+            background-color: rgb(0, 123, 255);
+        }
+
+        div#botones>button:nth-child(2) {
+            background-color: rgb(255, 0, 212);
+        }
+
+        div#botones>button:nth-child(3) {
+            background-color: rgb(255, 81, 0);
+        }
+
+        span{
+            color: rgb(216, 38, 207);
+            font-weight: bold;
+        }
+
+        #respuesta{
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PIEDRA, PAPEL O TIJERA</h1>
+    <div id="botones">
+        <button id="piedra">PIEDRA</button>
+        <button id="papel">PAPEL</button>
+        <button id="tijera">TIJERA</button>
+    </div>
+    <div>
+        <button id="jugar">JUGAR</button>
+    </div>
+    <div id="respuesta"></div>
+    <script src="juego.js"></script>
+</body>
+
+</html>
